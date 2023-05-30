@@ -102,3 +102,37 @@ int main()
     cout<<"Hello, I use header files!";
     return 0;
 }
+
+    /*Goal: practice std::cin for strings
+**Write a program that prompts two users for their
+**name, address, and phone number. 
+**Print the information to the console in the following format:
+**name
+**\/t\/t address
+**\/t\/tphone number
+*/
+#include <iostream>
+using namespace std;
+int main(){
+    
+    string name;
+    string address;
+    string phoneNumber;
+    
+    getline(cin, name);
+    getline(cin, address);
+    getline(cin, phoneNumber);
+    
+    cout<<name<<endl;
+    cout<<"\t\t"<<address<<endl;
+    cout<<"\t\t"<<phoneNumber<<endl;
+    
+    getline(cin, name);
+    getline(cin, address);
+    getline(cin, phoneNumber);
+    
+    cout<<name<<endl;
+    cout<<"\t\t"<<address<<endl;
+    cout<<"\t\t"<<phoneNumber<<endl;
+}
+    
