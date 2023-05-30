@@ -9,6 +9,8 @@ int main(){
     
     std::cout << "Hello world, I am ready for C++";
 }
+    
+    
 /*Use the namespace keyword to simplify typing*/
 
 #include <iostream>
