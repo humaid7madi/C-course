@@ -1592,3 +1592,42 @@ T sumTwo(T a, T b){
 }
 
 	
+	/*header file*/
+
+#include <iostream>
+
+using namespace std;
+
+template <class T>
+class Multiplier{
+    private:
+        T M1;
+        T M2;
+        
+    public:
+        void setM1(T mm);
+        void setM2(T mm);
+        void setProduct();
+        void printEquation();
+};
+
+template <class T>
+void Multiplier<T>::setM1(T mm){
+    M1 = mm;
+}
+
+
+template <class T>
+void Multiplier<T>::setM2(T mm){
+    M2 = mm;
+}
+
+template <class T>
+void Multiplier<T>::setProduct(){
+    cout<<"hi";
+}
+
+template <class T>
+void Multiplier<T>::printEquation(){
+    cout<<M1<<" "<<M2;
+}
