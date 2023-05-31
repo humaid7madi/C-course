@@ -1385,7 +1385,7 @@ float Compare::findSmaller(float input1, float input2, float input3)
 }
 
 float Compare::findSmaller(float array[], int size){
-    int min=100000000;
+    float min=100000000;
     for(int i=0;i<size;i++){
         if(array[i]<min)
             min=array[i];
