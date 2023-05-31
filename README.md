@@ -379,6 +379,35 @@ int main()
    return 0;
 }
     
+    /*For this program print for each variable
+**print the value of the variable, 
+**then print the address where it is stored. 
+*/
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    int givenInt;
+    float givenFloat;
+    double givenDouble ;
+    std::string givenString;
+    char givenChar;
+    cin>> givenInt;
+    cin>> givenFloat;
+    cin>> givenDouble;
+    cin>>givenChar;
+    getline (cin,givenString);
+    
+    cout<< givenInt<<" "<< &givenInt<<"\n";
+    cout<< givenFloat<<" "<< &givenFloat<<"\n";
+    cout<< givenDouble<<" "<< &givenDouble<<"\n";
+    cout<< givenChar<<" "<< &givenChar<<"\n";
+    cout<< givenString<<" "<< &givenString<<"\n";
+
+    return 0;
+}
+
     /*Now I would like you to do a switch statement with breaks
 **between the cases. Create a program that asks the user for
 **two float numbers. Then asks the user if they would like to:
