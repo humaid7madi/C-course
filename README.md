@@ -924,4 +924,79 @@ void Dog::printInfo()
     cout<<name<<" "<<licenseNumber;
 }
     
+/*Goal: practice creating and using classes.
+**Create a class called Cat.
+**Create the following members:
+**private members: name, breed, age
+**public members: setName, setBreed,setAge
+**getName, getBreed, getAge, printInfo*/
 
+#include "main.hpp"
+
+int main(){
+    Cat cat1;
+    Cat cat2;
+    
+    cat1.setName("mi");
+    cat2.setName("mo");
+    
+    cat1.setBreed("op");
+    cat2.setBreed("op2");
+    
+    cat1.setAge(4);
+    cat2.setAge(2);
+    
+    cat1.printInfo();
+    cat2.printInfo();
+}
+    
+    /*Header file for main.cpp
+**Create a class called Cat.
+**Create the following members:
+**private members: name, breed, age
+**public members: setName, setBreed,setAge
+**getName, getBreed, getAge, printInfo*/
+
+
+#include <iostream>
+using namespace std;
+
+class Cat{
+    string name;
+    string breed;
+    int age;
+    
+    public:
+        void setName(string namein);
+        void setBreed(string breedin);
+        void setAge(int agein);
+        string getName();
+        string getBreed();
+        int getAge();
+        void printInfo();
+};
+
+void Cat::setName(string namein){
+    name=namein;
+}
+void Cat::setBreed(string breedin){
+    breed=breedin;
+}
+void Cat::setAge(int agein){
+    age=agein;
+}
+
+string Cat::getName(){
+    return name;
+}
+string Cat::getBreed(){
+    return breed;
+}
+int Cat::getAge(){
+    return age;
+}
+
+void Cat::printInfo(){
+    cout<<name<<" "<<breed<<" "<<" "<<age<<"\n";
+}
+    
