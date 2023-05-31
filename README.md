@@ -1567,3 +1567,28 @@ int main(void)
    cout << "\nTotal = "<<total;
    return 0;
 }
+	
+	
+/*Goal: Practice writing generic functions*/
+
+#include "main.hpp"
+
+int main()
+{
+    int a = 90;
+    int b = 1; 
+    std::cout<<a <<" + "<<b<<" = "<< sumTwo(a,b);
+    return 0;
+}
+	
+#include<iostream>
+
+template <typename T>
+T sumTwo(T a, T b);
+
+template <typename T>
+T sumTwo(T a, T b){
+    return a + b;
+}
+
+	
