@@ -607,3 +607,35 @@ void  printProduct(int m1, int m2,int product){
     std::cout<<product;
     
 }
+    
+    
+    
+    
+    /*Put your functions here. 
+**The grader will use this file to check your work. 
+*/
+#include <iostream>
+using namespace std;
+void printEquation(int m1, int m2, int sum, char operation);
+int sum(int m1, int m2);
+
+void printEquation(int m1, int m2, int sum, char operation){
+    cout<<m1<<" "<<operation<<" "<<m2<<" = "<<sum<<"\n";
+}
+
+int sum(int m1, int m2)
+{
+    return m1 +m2;
+}
+    
+    /*Goal: practice writing functions with parameters and return values.*/
+
+#include "main.hpp"
+
+int main(){
+    int a=1,b=2,su;
+    
+    su = sum(a,b);
+    printEquation(a, b, su,'+');
+    return 0;
+}
