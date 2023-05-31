@@ -460,4 +460,60 @@ int main()
     return 0;
 }
 
+/*Goal: Practice array manipulation in C++. 
+**The user will input 40 integers. 
+**Put them into an array. Then print the array in the order the numbers were
+**entered. Then print in reverse order. Then sort the array in ascending order 
+**and print it. 
+**The each print of the array should separate the numbers in the array by
+**one space. 
+**For example: the array were [3,4,55] the printout would be 3 4 55
+*/
 
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+int main()
+{
+    int input;
+    int userInput[40];
+    int min;
+    for(int i = 0; i <=40; i++)
+    {
+        cin>>input;
+        userInput[i] = input;
+    }
+    
+    for(int i = 0; i <=40; i++)
+    {
+        cout<<userInput[i]<<" ";
+    }
+        cout<<"\n";
+
+    for(int i = 39; i >=0; i--)
+    {
+        cout<<userInput[i]<<" ";
+    }
+    cout<<"\n";
+    int index;
+    for(int i = 0; i <=40; i++)
+    {min=userInput[i];
+        for(int j = i+1; j <=40; j++)
+    {
+        
+        if(min>userInput[j]){
+            min = userInput[j];
+            index=j;
+        }
+    }
+    userInput[index]= userInput[i];
+    userInput[i]= min;
+    }
+    
+        for(int i = 0; i <=40; i++)
+    {
+        cout<<userInput[i]<<" ";
+    }
+    
+    return 0;
+}
