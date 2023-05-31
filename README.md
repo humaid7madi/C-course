@@ -460,4 +460,36 @@ int main()
     return 0;
 }
 
+    
+    /*Find the min and max and average of 15 numbers that a user will input.
+**The numbers range from 0 to 100. 
+**We will do it now for practice and again later when we learn arrays and 
+**functions. So you do not have to keep all fifteen numbers stored in memory.
+**HINT: you will need to use scanf for input text.
+*/
+#include <iostream>
+using namespace std;
+int main(){
+    int input;
+    int min=100;
+    int max=0,sum=0;
+    float average;
+    for(int i=0;i<15;i++){
+        cin>>input; 
+        if(min>input){
+            min = input;
+        }
+        
+        if(max<input){
+            max = input;
+        }
+        sum+=input;
+    }
+    average = sum/15;
+    cout<< "min "<< min<<"\n";
+    cout<< "max "<< max<<"\n";
+    cout<< "average "<< average<<"\n";
+
+return 0;
+}
 
