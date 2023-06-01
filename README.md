@@ -1861,4 +1861,56 @@ int main ()
   return 0;
 }
 
+	
+	
+	
+	// Goal: pracitce constructing vectors
+// and their iterators
+// Call the vector vFloat
+// Call the iterator it
+
+//TODO: Add the necessary libraries
+#include "main.hpp"
+
+int main ()
+{
+  //TODO: create a vector of floats
+    vector<float> vFloat;
+    std::cout<<"vFloat has "<<vFloat.size()<<" elements\n";
+  
+  std::cout<<"\n\nAdding 10 elements to the vector\n";
+  vFloat.resize(10);
+  //TODO: assign the value 8.8 to 10 elements of the vector
+   vFloat.assign(8.8,10);
+  std::cout<<"vFloat has "<<vFloat.size()<<" elements\n"; 
+
+
+  //TODO: Complete the Print function in main.hpp 
+  // Call the function here to print out each element of vFloat
+    printVector(vFloat);
+
+  return 0;
+}
+
+
+	
+	// constructing vectors
+// constructing vectors
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void printVector(vector<float> vIn);
+
+ void printVector(vector<float> vIn)
+ {//printing the contents of vIns
+    //TODO: Complete the function 
+    vector<float>::iterator to;
+    
+    for(to= vIn.begin();to!=vIn.end();++to){
+        cout<<*to<<" ";
+    }
+    
+ }
+ 
 
