@@ -1833,3 +1833,32 @@ string Pet::getName()
     return name;
 }
 
+	
+	
+	
+	
+	
+	/*Create a vector of floats called vFloat. 
+* vFloat should have an iterator. 
+*/
+
+//TODO: include the necessary libraries
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main ()
+{
+  //TODO: instantiate vFloat vector
+  vector<float> vFloat;
+  cout<<"vFloat has "<<vFloat.size()<<" elements\n";
+  
+  //Changing the size of vectorInts to 10
+  //TODO: Change the size of vFloat to 10 elements
+  vFloat.resize(10);
+  cout<<"\n\n vFloat now has "<<vFloat.size()<<" elements\n";
+ 
+  return 0;
+}
+
+
