@@ -1,0 +1,28 @@
+/*For this program print for each variable
+**print the value of the variable, 
+**then print the address where it is stored. 
+*/
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    int givenInt;
+    float givenFloat;
+    double givenDouble ;
+    std::string givenString;
+    char givenChar;
+    cin>> givenInt;
+    cin>> givenFloat;
+    cin>> givenDouble;
+    cin>>givenChar;
+    getline (cin,givenString);
+    
+    cout<< givenInt<<" "<< &givenInt<<"\n";
+    cout<< givenFloat<<" "<< &givenFloat<<"\n";
+    cout<< givenDouble<<" "<< &givenDouble<<"\n";
+    cout<< givenChar<<" "<< &givenChar<<"\n";
+    cout<< givenString<<" "<< &givenString<<"\n";
+
+    return 0;
+}
