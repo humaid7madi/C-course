@@ -1,0 +1,32 @@
+/*Goal: practice using stringstream
+/*Goal: practice getting string inputs and 
+ **converting them to numeric variables using
+ **stringstream.
+ **
+ **Prompt the user for the length of a room. 
+ **Then prompt for the width of the room.
+ **Print out the area of the room. 
+ */
+
+  #include <iostream>
+ #include <string>
+ #include <sstream>
+ 
+ using namespace std;
+ 
+ int main(){
+     
+     string length;
+     string width;
+     float in1,in2,area;
+     
+     cin>> length;
+     cin>>width;
+     stringstream(length) >> in1;
+     stringstream(width) >> in2;
+     area= in1*in2;
+     cout<<area;
+     
+     return 0;
+ }
+ 
