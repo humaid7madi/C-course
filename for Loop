@@ -1,0 +1,19 @@
+/*Write a program that asks a user for five numbers.
+**Print out the sum and average of the five numbers.
+*/
+
+#include <iostream>
+using namespace std;
+int main(){
+    int input;
+    int sum;
+    float average;
+    for(int i=0;i<5;i++){
+        cin>>input;
+        sum = sum + input;
+    }
+    average = sum / 5.0;
+    
+    cout<<sum<< " "<< average;
+    return 0;
+}
