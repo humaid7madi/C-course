@@ -1,3 +1,3 @@
-# C++ Repo
+# World Skills
 
-This repo inlcudes all quiz problem solved during my C++ Course 
+This repo contains all my taining material for the world skills mobile robotics competition
