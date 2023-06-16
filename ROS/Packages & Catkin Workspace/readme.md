@@ -1,3 +1,5 @@
+# Create a Catkin Workspace
+
 catkin_init_workspace
 
 (only the highlighted area)
@@ -12,3 +14,5 @@ catkin_make
 i faced some problem with the priviliges so i used the below commmand inisde each folder to continue 
 
 " sudo chmod -R 777 /home/workspace/cartking_ws/src "
+
+# Add a Package
