@@ -16,3 +16,20 @@ i faced some problem with the priviliges so i used the below commmand inisde eac
 " sudo chmod -R 777 /home/workspace/cartking_ws/src "
 
 # Add a Package
+
+Cloning the simple_arm Package
+
+![git](https://github.com/humaid7madi/Mobile-Robotics/assets/94049507/db26a6dc-1531-44f8-9d5c-2d16812e7b8d)
+
+Building the simple_arm package
+
+![catkin_make](https://github.com/humaid7madi/Mobile-Robotics/assets/94049507/84fafa2d-90a2-4955-b477-b277bbae7e67)
+
+
+Error I got:
+
+The package "controller_manager" is missing or not installed in your system
+
+To solve the problem:
+
+sudo apt-get install ros-noetic-controller-manager
