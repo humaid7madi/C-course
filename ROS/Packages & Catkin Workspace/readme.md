@@ -33,3 +33,20 @@ The package "controller_manager" is missing or not installed in your system
 To solve the problem:
 
 sudo apt-get install ros-noetic-controller-manager
+
+# Roslaunch
+
+![a](https://github.com/humaid7madi/Mobile-Robotics/assets/94049507/31ccf3b9-f9f8-45d6-956f-ee263efd4844)
+
+![gazebo](https://github.com/humaid7madi/Mobile-Robotics/assets/94049507/cb3cddec-3d60-43e8-9cf2-8ccf101ca387)
+
+
+
+The error I got i solved it using these 2 commands:
+
+sudo apt-get install ros-noetic-gazebo-ros-pkgs
+
+source /opt/ros/noetic/setup.bash
+
+
+
