@@ -49,4 +49,19 @@ sudo apt-get install ros-noetic-gazebo-ros-pkgs
 source /opt/ros/noetic/setup.bash
 
 
+# Rosdep
+
+$ rosdep check <package name>
+
+$ rosdep install -i <package name>
+
+Note: In order for the command to work, the workspace must be first sourced with source devel/setup.bash.
+
+
+# Dive Deeper into Packages
+
+![s](https://github.com/humaid7madi/Mobile-Robotics/assets/94049507/327689d6-4f7b-4e85-817e-a621277f5099)
+
+
+
 
