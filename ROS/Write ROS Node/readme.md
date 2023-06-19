@@ -42,3 +42,33 @@ allows request/response communication to exist between nodes.
 ros::ServiceServer service = n.advertiseService(`service_name`, handler);
 
 
+# Arm Mover
+
+
+![image](https://github.com/humaid7madi/Mobile-Robotics/assets/94049507/b3fa962f-f396-473c-a9a2-819f15ac18c1)
+
+
+![image](https://github.com/humaid7madi/Mobile-Robotics/assets/94049507/c972f2b2-5ada-4911-b5f9-e2d40728a802)
+
+![image](https://github.com/humaid7madi/Mobile-Robotics/assets/94049507/d0b8a4d1-2c77-4336-a240-42b1eabdb5ff)
+
+
+# ROS Clients and Subscribers
+
+ROS Clients:
+
+A service client defined inside a service client node can request services from a service server node
+
+ros::ServiceClient client = n.serviceClient<package_name::service_file_name>("service_name");
+
+ROS Subscribers:
+
+A subscriber enables your node to read messages from a topic, allowing useful data to be streamed to the node.
+
+# Look Away
+
+![image](https://github.com/humaid7madi/Mobile-Robotics/assets/94049507/c3be9105-ef45-4d82-93d9-16b4c57ca758)
+
+
+
+
