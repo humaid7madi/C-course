@@ -1,0 +1,219 @@
+
+                try {
+                    (function () {
+                        var util = {
+                            isValidGuid: function (val) {
+                                var validGUIDPattern = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
+                                var isValid = val && validGUIDPattern.test(val.trim());
+                                return isValid;
+                            },
+                            warnIfInvalidToken: function (token) {
+                                var isTokenValid = util.isValidGuid(token);
+                                if (!isTokenValid) {
+                                    console.error('Token is not a valid GUID');
+                                }
+                                return isTokenValid;
+                            }
+                        };
+                        var TatariTagManager = /** @class */ (function () {
+                            function TatariTagManager(token) {
+                                this.debugCookieName = 'ttm-debug-cookie';
+                                this.debugCookieTime = 24 * 60 * 60 * 1000; // 1 day
+                                this.debug = false;
+                                this.util = util;
+                                this._i = token;
+                                this.checkDebugCookie(); // Debug before everything
+                            }
+                            TatariTagManager.prototype.enableDebug = function () {
+                                this.createCookie(this.debugCookieName, '1', this.debugCookieTime);
+                                this.debug = true;
+                                console.info('Debug: TTM Debug Enabled');
+                            };
+                            // handle multiple instantiations of the snippet
+                            TatariTagManager.prototype.init = function (token) {
+                                this._i = token;
+                                // emit console error if token is not valid GUID
+                                util.warnIfInvalidToken(token);
+                            };
+                            TatariTagManager.prototype.flushCommandQueue = function (commandQueue) {
+                                if (commandQueue === void 0) { commandQueue = []; }
+                                if (this.debug) {
+                                    console.info('Debug: flushing command queue', commandQueue);
+                                }
+                                if (commandQueue.length > 0) {
+                                    var that_1 = this;
+                                    commandQueue.forEach(function (m) {
+                                        that_1[m[0]].apply(that_1, m.slice(1, m.length));
+                                    });
+                                }
+                            };
+                            TatariTagManager.prototype.onPageview = function () {
+                                if (this.debug) {
+                                    console.info('Debug: onPageview triggered');
+                                }
+                                // custom stuff you want to do on pageview
+
+(function () {
+    var baseUrl = 'https://segment.prod.bidr.io/associate-segment?';
+    var params = {
+        buzz_key: 'tatari',
+        segment_key: 'tatari-2533',
+        value: '',
+        uncacheplz: '' + Math.floor(Math.random() * 10000042069)
+    };
+    var img = new Image(0, 0);
+    img.src = baseUrl + new URLSearchParams(params).toString();
+    img.style.display = 'none';
+    img.alt = '';
+    document.body.appendChild(img);
+})();
+
+// hook for TTM on pageview
+if (window['TatariXandr'] && window['TatariXandr'].event) {
+    window['TatariXandr'].event('PageView');
+}
+else {
+    pixie('event', 'PageView');
+}
+
+                            };
+                            TatariTagManager.prototype.onTrack = function (event, arg) {
+                                if (this.debug) {
+                                    console.info('Debug: onTrack triggered', event, arg);
+                                }
+                                // custom stuff you want to do on track being fired
+
+(function () {
+    var segments = {};
+    var baseUrl = 'https://segment.prod.bidr.io/associate-segment?';
+    var params = {
+        buzz_key: 'tatari',
+        value: '',
+        segment_key: segments[event],
+        uncacheplz: '' + Math.floor(Math.random() * 10000042069)
+    };
+    // If we have a matching segment name, fire the event
+    if (params['segment_key']) {
+        var img = new Image(0, 0);
+        img.src = baseUrl + new URLSearchParams(params).toString();
+        img.style.display = 'none';
+        img.alt = '';
+        document.body.appendChild(img);
+    }
+})();
+
+// hook for TTM on track
+if (window['TatariXandr'] && window['TatariXandr'].event) {
+    window['TatariXandr'].event(event);
+}
+else {
+    // Xandr doesn't accept events with spaces or hyphens
+    pixie('event', event.replace(/-|\s/g, ''));
+}
+
+                            };
+                            TatariTagManager.prototype.onIdentify = function (id) {
+                                if (this.debug) {
+                                    console.info('Debug: onIdentify triggered', id);
+                                }
+                                // custom stuff to do on identify
+
+                            };
+                            TatariTagManager.prototype.createCookie = function (cookieName, cookieValue, cookieExp) {
+                                var exp = '';
+                                var date = new Date();
+                                var domain = "domain=" + this.getDomain() + ";";
+                                date.setTime(date.getTime() + cookieExp);
+                                exp = "expires=" + date.toUTCString() + ";";
+                                document.cookie = cookieName + "=" + cookieValue + "; " + exp + " " + domain + " path=/";
+                                return cookieValue;
+                            };
+                            TatariTagManager.prototype.getDomain = function () {
+                                var testCookieName = 'testTLD';
+                                var testCookie = testCookieName + "=test";
+                                var loc = document.location || { hostname: '' };
+                                var hostnames = loc.hostname.split('.');
+                                var domain = '';
+                                hostnames.some(function (_, i) {
+                                    var testDomain = hostnames.slice(hostnames.length - i - 1).join('.');
+                                    document.cookie = testCookie + ";domain=" + testDomain + ";";
+                                    if (document.cookie.indexOf(testCookie) !== -1) {
+                                        // found tld, remove cookie
+                                        domain = testDomain;
+                                        document.cookie = testCookieName + "=;domain=" + domain + ";expires=" + (new Date(0)).toUTCString() + ";";
+                                        return true;
+                                    }
+                                });
+                                return domain;
+                            };
+                            TatariTagManager.prototype.getCookie = function (cookieName) {
+                                var name = cookieName + "=";
+                                var decodedCookie = decodeURIComponent(document.cookie);
+                                var ca = decodedCookie.split(';');
+                                for (var _a = 0, ca_1 = ca; _a < ca_1.length; _a++) {
+                                    var c = ca_1[_a];
+                                    while (c.charAt(0) === ' ') {
+                                        c = c.substring(1);
+                                    }
+                                    if (c.indexOf(name) === 0) {
+                                        return c.substring(name.length, c.length);
+                                    }
+                                }
+                                return;
+                            };
+                            TatariTagManager.prototype.removeCookie = function (cookieName) {
+                                var domain = this.getDomain();
+                                // delete cookie which doesn't specify domain
+                                document.cookie = cookieName + "=; Max-Age=-99999999;";
+                                // delete cookie which does specify domain
+                                if (domain) {
+                                    document.cookie = cookieName + "=; Max-Age=-99999999; domain=" + domain + ";";
+                                }
+                            };
+                            TatariTagManager.prototype.checkDebugCookie = function () {
+                                var val = this.getCookie(this.debugCookieName);
+                                this.debug = val ? true : false;
+                            };
+                            return TatariTagManager;
+                        }());
+                        // Using tracker before real script is initialized
+                        var mockTagManager = window['ttm'] || [];
+                        // Here we replace the mock ttm with the real one
+                        var realTagManager = new TatariTagManager(mockTagManager['_i']);
+                        window['ttm'] = realTagManager;
+                        realTagManager.flushCommandQueue(mockTagManager);
+                    })();
+                }
+                catch (e) {
+                    console.log(e);
+                }
+b\š0ç­      d´@d´@E´-	d˜¬Ï   •    O^partitionKey=%28https%2Cnotion.site%29,:https://d2hrivdxn8ekm8.cloudfront.net/tag-manager/0fa7d05d-53d0-4e3b-9bd7-880d24b9df68-additional-latest.js necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+content-type: application/javascript
+content-length: 9800
+last-modified: Wed, 07 Dec 2022 20:56:13 GMT
+x-amz-version-id: 6VcMByKKxQgIY46CQLAz0ylYSVOtS5tF
+accept-ranges: bytes
+server: AmazonS3
+date: Sun, 18 Jun 2023 21:08:32 GMT
+etag: "6733e7f2e258bbb5d6b7acbf1edd2f4a"
+x-cache: Hit from cloudfront
+via: 1.1 e398192cbf3033799f300d7d727655d0.cloudfront.net (CloudFront)
+x-amz-cf-pop: DXB53-P1
+x-amz-cf-id: 31pc-Q6JeD5ApGhY4J6oZj0X6cvcPcTjGWMe4WJ6glQrcrmyByjsng==
+age: 16881
+X-Firefox-Spdy: h2
+ original-response-headers content-type: application/javascript
+content-length: 9800
+last-modified: Wed, 07 Dec 2022 20:56:13 GMT
+x-amz-version-id: 6VcMByKKxQgIY46CQLAz0ylYSVOtS5tF
+accept-ranges: bytes
+server: AmazonS3
+date: Sun, 18 Jun 2023 21:08:32 GMT
+etag: "6733e7f2e258bbb5d6b7acbf1edd2f4a"
+x-cache: Hit from cloudfront
+via: 1.1 e398192cbf3033799f300d7d727655d0.cloudfront.net (CloudFront)
+x-amz-cf-pop: DXB53-P1
+x-amz-cf-id: 31pc-Q6JeD5ApGhY4J6oZj0X6cvcPcTjGWMe4WJ6glQrcrmyByjsng==
+age: 16881
+X-Firefox-Spdy: h2
+ ctid 2 uncompressed-len 0 net-response-time-onstart 28 net-response-time-onstop 28   &H

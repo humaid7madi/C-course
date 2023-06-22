@@ -1,0 +1,18 @@
+[rospy.client][INFO] 2023-06-19 19:31:52,691: init_node, name[/rosservice_83847_1687188712665], pid[83847]
+[xmlrpc][INFO] 2023-06-19 19:31:52,692: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-19 19:31:52,693: Started XML-RPC server [http://humaid7madi-VirtualBox:35385/]
+[rospy.impl.masterslave][INFO] 2023-06-19 19:31:52,693: _ready: http://humaid7madi-VirtualBox:35385/
+[rospy.init][INFO] 2023-06-19 19:31:52,693: ROS Slave URI: [http://humaid7madi-VirtualBox:35385/]
+[rospy.registration][INFO] 2023-06-19 19:31:52,694: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-06-19 19:31:52,694: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-06-19 19:31:52,795: registered with master
+[rospy.rosout][INFO] 2023-06-19 19:31:52,795: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-06-19 19:31:52,798: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-06-19 19:31:52,800: initializing /clock core topic
+[rospy.simtime][INFO] 2023-06-19 19:31:52,801: connected to core topic /clock
+[rospy.internal][INFO] 2023-06-19 19:31:52,809: topic[/clock] adding connection to [http://humaid7madi-VirtualBox:42027/], count 0
+[rospy.internal][INFO] 2023-06-19 19:31:53,262: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2023-06-19 19:31:57,479: signal_shutdown [atexit]
+[rospy.internal][INFO] 2023-06-19 19:31:57,482: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-06-19 19:31:57,482: topic[/clock] removing connection to http://humaid7madi-VirtualBox:42027/
+[rospy.impl.masterslave][INFO] 2023-06-19 19:31:57,482: atexit

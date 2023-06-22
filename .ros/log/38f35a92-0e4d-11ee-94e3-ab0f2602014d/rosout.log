@@ -1,0 +1,15 @@
+
+
+0.000000000  Node Startup
+0.000000000 INFO /simple_arm/spawner [spawner:122(main)] [topics: /clock, /rosout] Waiting for /clock to be available...
+0.000000000 INFO /urdf_spawner [gazebo_interface.py:27(spawn_urdf_model_client)] [topics: /clock, /rosout] Waiting for service /gazebo/spawn_urdf_model
+0.000000000 INFO /gazebo [/tmp/binarydeb/ros-noetic-roscpp-1.16.0/src/libros/service.cpp:123(service::waitForService)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics] waitForService: Service [/gazebo/set_physics_properties] is now available.
+0.000000000 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-ros-2.9.2/src/gazebo_ros_api_plugin.cpp:2379(GazeboRosApiPlugin::physicsReconfigureThread)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Physics dynamic reconfigure ready.
+0.000000000 INFO /urdf_spawner [gazebo_interface.py:31(spawn_urdf_model_client)] [topics: /clock, /rosout] Calling service /gazebo/spawn_urdf_model
+261.179000000 INFO /urdf_spawner [gazebo_interface.py:33(spawn_urdf_model_client)] [topics: /clock, /rosout] Spawn status: SpawnModel: Entity pushed to spawn queue, but spawn service timed out waiting for entity to appear in simulation under the name simple_arm
+261.179000000 ERROR /urdf_spawner [spawn_model:191(SpawnModelNode.run)] [topics: /clock, /rosout] Spawn service failed. Exiting.
+261.179000000 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/include/gazebo_plugins/gazebo_ros_utils.h:99(string gazebo::GetRobotNamespace)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Camera Plugin: Using the 'robotNamespace' param: '/'
+261.179000000 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_camera_utils.cpp:300(GazeboRosCameraUtils::LoadThread)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Camera Plugin (ns = /)  <tf_prefix_>, set to ""
+261.399000000 INFO /simple_arm/spawner [spawner:124(main)] [topics: /clock, /rosout] /clock is published. Proceeding to load the controller(s).
+261.402000000 INFO /simple_arm/spawner [spawner:128(main)] [topics: /clock, /rosout] Controller Spawner: Waiting for service controller_manager/load_controller
+282.653000000 WARN /simple_arm/spawner [spawner:145(main)] [topics: /clock, /rosout] Controller Spawner couldn't find the expected controller_manager ROS interface.

@@ -1,0 +1,2 @@
+{"timestamp":71407,"category":"nimbus_events","name":"enrollment","extra":{"experiment_type":"rollout","enrollment_id":"90a512fc-0538-4c97-89f9-25806dc88da0","experiment":"new-import-interface-firefox-114-existing-users-rollout","branch":"control-rollout"}}
+{"timestamp":71462,"category":"nimbus_events","name":"unenrollment","extra":{"experiment":"use-additional-tiles-for-sponsored-shortcuts","branch":"control","enrollment_id":"32785ae2-4f0e-4294-a5bf-2cf36854833c","reason":"recipe-not-seen"}}

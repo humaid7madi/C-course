@@ -1,0 +1,22 @@
+[rospy.client][INFO] 2023-06-19 06:58:53,657: init_node, name[/simple_arm/spawner], pid[81052]
+[xmlrpc][INFO] 2023-06-19 06:58:53,658: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-19 06:58:53,658: Started XML-RPC server [http://humaid7madi-VirtualBox:35531/]
+[rospy.impl.masterslave][INFO] 2023-06-19 06:58:53,658: _ready: http://humaid7madi-VirtualBox:35531/
+[rospy.registration][INFO] 2023-06-19 06:58:53,659: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-06-19 06:58:53,659: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-06-19 06:58:53,750: ROS Slave URI: [http://humaid7madi-VirtualBox:35531/]
+[rospy.init][INFO] 2023-06-19 06:58:53,751: registered with master
+[rospy.rosout][INFO] 2023-06-19 06:58:53,751: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-06-19 06:58:53,758: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-06-19 06:58:53,760: initializing /clock core topic
+[rospy.simtime][INFO] 2023-06-19 06:58:53,764: connected to core topic /clock
+[rosout][INFO] 2023-06-19 06:58:53,769: Waiting for /clock to be available...
+[rospy.internal][INFO] 2023-06-19 06:58:53,982: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2023-06-19 06:58:55,854: topic[/clock] adding connection to [http://humaid7madi-VirtualBox:35665/], count 0
+[rosout][INFO] 2023-06-19 06:58:58,986: /clock is published. Proceeding to load the controller(s).
+[rosout][INFO] 2023-06-19 06:58:58,988: Controller Spawner: Waiting for service controller_manager/load_controller
+[rosout][WARNING] 2023-06-19 06:59:29,182: Controller Spawner couldn't find the expected controller_manager ROS interface.
+[rospy.core][INFO] 2023-06-19 06:59:29,212: signal_shutdown [atexit]
+[rospy.internal][INFO] 2023-06-19 06:59:29,214: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-06-19 06:59:29,215: topic[/clock] removing connection to http://humaid7madi-VirtualBox:35665/
+[rospy.impl.masterslave][INFO] 2023-06-19 06:59:29,215: atexit

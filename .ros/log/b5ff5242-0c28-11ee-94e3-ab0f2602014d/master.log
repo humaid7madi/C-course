@@ -1,0 +1,21 @@
+[rosmaster.main][INFO] 2023-06-16 13:32:29,963: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2023-06-16 13:32:29,963: Starting ROS Master Node
+[xmlrpc][INFO] 2023-06-16 13:32:29,965: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2023-06-16 13:32:29,965: Started XML-RPC server [http://humaid7madi-VirtualBox:11311/]
+[xmlrpc][INFO] 2023-06-16 13:32:29,966: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2023-06-16 13:32:29,967: Master initialized: port[11311], uri[http://humaid7madi-VirtualBox:11311/]
+[rosmaster.master][INFO] 2023-06-16 13:32:30,028: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2023-06-16 13:32:30,029: +PARAM [/roslaunch/uris/host_humaid7madi_virtualbox__35799] by /roslaunch
+[rosmaster.master][INFO] 2023-06-16 13:32:30,134: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2023-06-16 13:32:30,134: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2023-06-16 13:32:30,424: +SERVICE [/rosout/get_loggers] /rosout http://humaid7madi-VirtualBox:44187/
+[rosmaster.master][INFO] 2023-06-16 13:32:30,425: +SERVICE [/rosout/set_logger_level] /rosout http://humaid7madi-VirtualBox:44187/
+[rosmaster.master][INFO] 2023-06-16 13:32:30,426: +PUB [/rosout_agg] /rosout http://humaid7madi-VirtualBox:44187/
+[rosmaster.master][INFO] 2023-06-16 13:32:30,429: +SUB [/rosout] /rosout http://humaid7madi-VirtualBox:44187/
+[rosmaster.master][INFO] 2023-06-16 13:34:14,734: -PUB [/rosout_agg] /rosout http://humaid7madi-VirtualBox:44187/
+[rosmaster.master][INFO] 2023-06-16 13:34:14,741: -SUB [/rosout] /rosout http://humaid7madi-VirtualBox:44187/
+[rosmaster.master][INFO] 2023-06-16 13:34:14,741: -SERVICE [/rosout/get_loggers] /rosout rosrpc://humaid7madi-VirtualBox:44241
+[rosmaster.master][INFO] 2023-06-16 13:34:14,742: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://humaid7madi-VirtualBox:44241
+[rosmaster.main][INFO] 2023-06-16 13:34:14,767: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2023-06-16 13:34:14,767: stopping master...
+[rospy.core][INFO] 2023-06-16 13:34:14,767: signal_shutdown [atexit]

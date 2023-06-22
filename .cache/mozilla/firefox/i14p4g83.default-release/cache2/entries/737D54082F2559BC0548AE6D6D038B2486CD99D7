@@ -1,0 +1,469 @@
+/*
+Theme Name: Twenty Seventeen
+Description: Used to style blocks.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 General Block Styles
+2.0 Blocks - Common Blocks
+3.0 Blocks - Formatting
+4.0 Blocks - Layout Elements
+5.0 Blocks - Widgets
+6.0 Blocks - Colors
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 General Block Styles
+--------------------------------------------------------------*/
+
+/* Captions */
+
+[class^="wp-block-"]:not(.wp-block-gallery) figcaption {
+	font-style: italic;
+	margin-bottom: 1.5em;
+	text-align: left;
+}
+
+.rtl [class^="wp-block-"]:not(.wp-block-gallery) figcaption {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+2.0 Blocks - Common Blocks
+--------------------------------------------------------------*/
+
+/* Paragraph */
+
+p.has-drop-cap:not(:focus)::first-letter {
+	font-size: 5em;
+	margin-top: 0.075em;
+}
+
+/* Image */
+
+.wp-block-image {
+	margin-bottom: 1.5em;
+}
+
+.wp-block-image figure {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.wp-block-image figure.alignleft {
+	margin-right: 1.5em;
+}
+
+.wp-block-image figure.alignright {
+	margin-left: 1.5em;
+}
+
+/* Gallery */
+
+.wp-block-gallery {
+	margin-bottom: 1.5em;
+}
+
+.wp-block-gallery figcaption {
+	font-style: italic;
+}
+
+.wp-block-gallery.aligncenter {
+	display: flex;
+	margin: 0 -8px;
+}
+
+/* Quote */
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	border: 0;
+	padding: 0;
+}
+
+.wp-block-quote.alignleft p:last-of-type,
+.wp-block-quote.alignright p:last-of-type {
+	margin-bottom: 0;
+}
+
+.wp-block-quote cite {
+	color: inherit;
+	font-size: inherit;
+}
+
+/* Audio */
+
+.wp-block-audio audio {
+	display: block;
+	width: 100%;
+}
+
+/* Cover */
+
+.wp-block-cover-image.alignright,
+.wp-block-cover.alignright,
+.wp-block-cover-image.alignleft,
+.wp-block-cover.alignleft,
+.wp-block-cover-image.aligncenter,
+.wp-block-cover.aligncenter {
+	display: flex;
+}
+
+/* File */
+
+.wp-block-file .wp-block-file__button {
+	background-color: #222;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	margin-top: 2em;
+	padding: 0.7em 2em;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+	white-space: nowrap;
+}
+
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-file .wp-block-file__button:focus {
+	background-color: #767676;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+3.0 Blocks - Formatting
+--------------------------------------------------------------*/
+
+/* Code */
+
+.wp-block-code {
+	background: transparent;
+	border: 0;
+	padding: 0;
+}
+
+/* Pullquote */
+
+.wp-block-pullquote {
+	border: 0;
+}
+
+.wp-block-pullquote__citation,
+.wp-block-pullquote cite {
+	font-size: inherit;
+	text-transform: none;
+}
+
+/* Table */
+
+.wp-block-table thead th {
+	border-bottom: 2px solid #bbb;
+	padding-bottom: 0.5em;
+}
+
+.wp-block-table tr {
+	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table th,
+.wp-block-table td {
+	border: 0;
+}
+
+.rtl .wp-block-table th,
+.rtl .wp-block-table td {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+4.0 Blocks - Layout Elements
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+.wp-block-button .wp-block-button__link {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display: inline-block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	line-height: 1.66;
+	margin-top: 2em;
+	padding: 0.7em 2em;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+	white-space: nowrap;
+}
+
+.entry-content .wp-block-button__link {
+	background-color: #222;
+	color: #fff;
+}
+
+.entry-content .is-style-outline .wp-block-button__link:not(.has-background) {
+	background-color: transparent;
+}
+
+.entry-content .is-style-outline .wp-block-button__link:not(.has-text-color) {
+	color: #222;
+}
+
+.colors-dark .wp-block-button__link {
+	background-color: #fff;
+	color: #000;
+}
+
+.entry-content .wp-block-button__link:hover,
+.entry-content .wp-block-button__link:focus,
+.entry-content .is-style-outline .wp-block-button__link:not(.has-background):hover,
+.entry-content .is-style-outline .wp-block-button__link:not(.has-background):focus {
+	background-color: #767676;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+}
+
+.colors-dark .entry-content .wp-block-button__link:hover,
+.colors-dark .entry-content .wp-block-button__link:focus,
+.colors-dark .entry-content .is-style-outline .wp-block-button__link:not(.has-background):hover,
+.colors-dark .entry-content .is-style-outline .wp-block-button__link:not(.has-background):focus {
+	background-color: #bbb;
+	color: #000;
+}
+
+.colors-dark .entry-content .is-style-outline .wp-block-button__link:not(.has-text-color) {
+	color: #fff;
+}
+
+.colors-dark .entry-content .is-style-outline .wp-block-button__link:not(.has-text-color):hover,
+.colors-dark .entry-content .is-style-outline .wp-block-button__link:not(.has-text-color):focus {
+	color: #222;
+}
+
+.colors-custom .entry-content .wp-block-button__link,
+.colors-custom .entry-content .wp-block-button__link:hover,
+.colors-custom .entry-content .wp-block-button__link:focus,
+.colors-dark .entry-content .wp-block-button__link,
+.colors-dark .entry-content .wp-block-button__link:hover,
+.colors-dark .entry-content .wp-block-button__link:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.colors-custom .entry-content .wp-block-button__link:hover,
+.colors-custom .entry-content .wp-block-button__link:focus {
+	color: #fff;
+}
+
+/* Separator */
+
+.wp-block-separator {
+	border: 0;
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	max-width: 100px;
+}
+
+/* Media & Text */
+
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
+.wp-block-media-text *:last-child {
+	margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+5.0 Blocks - Widgets
+--------------------------------------------------------------*/
+
+/* Archives, Categories & Latest Posts */
+
+.wp-block-archives.aligncenter,
+.wp-block-categories.aligncenter,
+.wp-block-latest-posts.aligncenter {
+	list-style-position: inside;
+	text-align: center;
+}
+
+/* Comments */
+
+.wp-block-latest-comments article {
+	margin-bottom: 4em;
+}
+
+.blog:not(.has-sidebar) #primary .wp-block-latest-comments article,
+.archive:not(.page-one-column):not(.has-sidebar) #primary .wp-block-latest-comments article,
+.search:not(.has-sidebar) #primary .wp-block-latest-comments article {
+	float: none;
+	width: 100%;
+}
+
+.wp-block-latest-comments .avatar,
+.wp-block-latest-comments__comment-avatar {
+	border-radius: 0;
+}
+
+.wp-block-latest-comments a {
+	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+
+}
+
+.wp-block-latest-comments__comment-meta {
+	font-size: 16px;
+	font-size: 1rem;
+	margin-bottom: 0.4em;
+}
+
+.wp-block-latest-comments__comment-author,
+.wp-block-latest-comments__comment-link {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.wp-block-latest-comments__comment-date {
+	color: #767676;
+	font-size: 10px;
+	font-size: 0.625rem;
+	font-weight: 800;
+	letter-spacing: 0.1818em;
+	margin-top: 0.4em;
+	text-transform: uppercase;
+}
+
+.editor-block-list__block .wp-block-latest-comments__comment-excerpt p {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+/*--------------------------------------------------------------
+6.0 Blocks - Colors
+--------------------------------------------------------------*/
+
+.entry-content .has-pale-pink-color {
+	color: #f78da7;
+}
+
+.entry-content .has-pale-pink-background-color,
+.wp-block-button.is-style-outline .has-pale-pink-background-color:link {
+	background-color: #f78da7;
+}
+
+.entry-content .has-vivid-red-color {
+	color: #cf2e2e;
+}
+
+.entry-content .has-vivid-red-background-color,
+.wp-block-button.is-style-outline .has-vivid-red-background-color:link {
+	background-color: #cf2e2e;
+}
+
+.entry-content .has-luminous-vivid-orange-color {
+	color: #ff6900;
+}
+
+.entry-content .has-luminous-vivid-orange-background-color,
+.wp-block-button.is-style-outline .has-luminous-vivid-orange-background-color:link {
+	background-color: #ff6900;
+}
+
+.entry-content .has-luminous-vivid-amber-color {
+	color: #fcb900;
+}
+
+.entry-content .has-luminous-vivid-amber-background-color,
+.wp-block-button.is-style-outline .has-luminous-vivid-amber-background-color:link {
+	background-color: #fcb900;
+}
+
+.entry-content .has-light-green-cyan-color {
+	color: #7bdcb5;
+}
+
+.entry-content .has-light-green-cyan-background-color,
+.wp-block-button.is-style-outline .has-light-green-cyan-background-color:link {
+	background-color: #7bdcb5;
+}
+
+.entry-content .has-vivid-green-cyan-color {
+	color: #00d084;
+}
+
+.entry-content .has-vivid-green-cyan-background-color,
+.wp-block-button.is-style-outline .has-vivid-green-cyan-background-color:link {
+	background-color: #00d084;
+}
+
+.entry-content .has-pale-cyan-blue-color {
+	color: #8ed1fc;
+}
+
+.entry-content .has-pale-cyan-blue-background-color,
+.wp-block-button.is-style-outline .has-pale-cyan-blue-background-color:link {
+	background-color: #8ed1fc;
+}
+
+.entry-content .has-vivid-cyan-blue-color {
+	color: #0693e3;
+}
+
+.entry-content .has-vivid-cyan-blue-background-color,
+.wp-block-button.is-style-outline .has-vivid-cyan-blue-background-color:link {
+	background-color: #0693e3;
+}
+
+.entry-content .has-very-light-gray-color {
+	color: #eee;
+}
+
+.entry-content .has-very-light-gray-background-color,
+.wp-block-button.is-style-outline .has-very-light-gray-background-color:link {
+	background-color: #eee;
+}
+
+.entry-content .has-cyan-bluish-gray-color {
+	color: #abb8c3;
+}
+
+.entry-content .has-cyan-bluish-gray-background-color,
+.wp-block-button.is-style-outline .has-cyan-bluish-gray-background-color:link {
+	background-color: #abb8c3;
+}
+
+.entry-content .has-very-dark-gray-color {
+	color: #313131;
+}
+
+.entry-content .has-very-dark-gray-background-color,
+.wp-block-button.is-style-outline .has-very-dark-gray-background-color:link {
+	background-color: #313131;
+}
+¢Ç¿ëOú      dŒ9˜dŒ9™E±Ã­d•t   }    O^partitionKey=%28https%2Cku.ac.ae%29,:https://www.ku.ac.ae/wp-content/themes/khalifauniversity/assets/css/blocks.css?ver=1.1 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Fri, 16 Jun 2023 10:29:44 GMT
+Server: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k
+Last-Modified: Sat, 05 Jan 2019 21:16:49 GMT
+ETag: "27df-57ebc83847240"
+Accept-Ranges: bytes
+Content-Length: 10207
+Content-Type: text/css
+ original-response-headers Date: Fri, 16 Jun 2023 10:29:44 GMT
+Server: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k
+Last-Modified: Sat, 05 Jan 2019 21:16:49 GMT
+ETag: "27df-57ebc83847240"
+Accept-Ranges: bytes
+Content-Length: 10207
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/css
+ ctid 5 uncompressed-len 0 net-response-time-onstart 867 net-response-time-onstop 868   'ß

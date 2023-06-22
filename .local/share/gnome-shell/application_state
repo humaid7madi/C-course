@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.Nautilus.desktop" score="70" last-seen="1687448725"/>
+    <application id="org.gnome.eog.desktop" score="1" last-seen="1686987698"/>
+    <application id="org.gnome.Screenshot.desktop" score="11.5" last-seen="1686989318"/>
+    <application id="firefox.desktop" score="21865" last-seen="1687448695"/>
+    <application id="org.gnome.Terminal.desktop" score="7551" last-seen="1687448713"/>
+    <application id="org.gnome.gedit.desktop" score="79" last-seen="1687192612"/>
+    <application id="thunderbird.desktop" score="0" last-seen="1686989324"/>
+    <application id="yelp.desktop" score="0" last-seen="1686988525"/>
+    <application id="gazebo.desktop" score="25.5" last-seen="1687191950"/>
+    <application id="apport-gtk.desktop" score="2.5" last-seen="1686911286"/>
+    <application id="update-manager.desktop" score="0" last-seen="1687230546"/>
+  </context>
+</application-state>

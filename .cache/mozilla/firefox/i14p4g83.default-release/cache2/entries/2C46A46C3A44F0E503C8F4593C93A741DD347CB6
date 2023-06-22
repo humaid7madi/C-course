@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/google/shaka-packager version v2.6.1-634af6591c-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT634.1334838867188S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="video" maxWidth="1920" maxHeight="1080" frameRate="30000/1001" segmentAlignment="true" par="16:9">
+      <Representation id="0" bandwidth="1280252" codecs="avc1.4d401e" mimeType="video/mp4" sar="1:1" width="640" height="360">
+        <SegmentTemplate timescale="30000" initialization="t1667995540_03_640x360p_30Hz_800Kbps_init.mp4" media="t1667995540_03_640x360p_30Hz_800Kbps_$Number%03d$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="60060" r="315"/>
+            <S t="18978960" d="45045"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+      <Representation id="1" bandwidth="5878726" codecs="avc1.64001f" mimeType="video/mp4" sar="1:1" width="1280" height="720">
+        <SegmentTemplate timescale="30000" initialization="t1667995540_02_1280x720p_30Hz_5000Kbps_init.mp4" media="t1667995540_02_1280x720p_30Hz_5000Kbps_$Number%03d$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="60060" r="315"/>
+            <S t="18978960" d="45045"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+      <Representation id="2" bandwidth="11900220" codecs="avc1.640028" mimeType="video/mp4" sar="1:1" width="1920" height="1080">
+        <SegmentTemplate timescale="30000" initialization="t1667995540_01_1920x1080p_30Hz_10000Kbps_init.mp4" media="t1667995540_01_1920x1080p_30Hz_10000Kbps_$Number%03d$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="60060" r="315"/>
+            <S t="18978960" d="45045"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="audio" lang="en" segmentAlignment="true">
+      <Representation id="3" bandwidth="166781" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <SegmentTemplate timescale="48000" initialization="audio_init.mp4" media="audio_$Number%03d$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="96704"/>
+            <S t="96704" d="96256"/>
+            <S t="192960" d="95232"/>
+            <S t="288192" d="96256" r="2"/>
+            <S t="576960" d="95232"/>
+            <S t="672192" d="96256" r="2"/>
+            <S t="960960" d="95232"/>
+            <S t="1056192" d="96256" r="2"/>
+            <S t="1344960" d="95232"/>
+            <S t="1440192" d="96256" r="2"/>
+            <S t="1728960" d="95232"/>
+            <S t="1824192" d="96256" r="2"/>
+            <S t="2112960" d="95232"/>
+            <S t="2208192" d="96256" r="2"/>
+            <S t="2496960" d="95232"/>
+            <S t="2592192" d="96256" r="2"/>
+            <S t="2880960" d="95232"/>
+            <S t="2976192" d="96256" r="2"/>
+            <S t="3264960" d="95232"/>
+            <S t="3360192" d="96256" r="2"/>
+            <S t="3648960" d="95232"/>
+            <S t="3744192" d="96256" r="2"/>
+            <S t="4032960" d="95232"/>
+            <S t="4128192" d="96256" r="2"/>
+            <S t="4416960" d="95232"/>
+            <S t="4512192" d="96256" r="2"/>
+            <S t="4800960" d="95232"/>
+            <S t="4896192" d="96256" r="2"/>
+            <S t="5184960" d="95232"/>
+            <S t="5280192" d="96256" r="2"/>
+            <S t="5568960" d="95232"/>
+            <S t="5664192" d="96256" r="2"/>
+            <S t="5952960" d="95232"/>
+            <S t="6048192" d="96256" r="2"/>
+            <S t="6336960" d="95232"/>
+            <S t="6432192" d="96256" r="2"/>
+            <S t="6720960" d="95232"/>
+            <S t="6816192" d="96256" r="2"/>
+            <S t="7104960" d="95232"/>
+            <S t="7200192" d="96256" r="2"/>
+            <S t="7488960" d="95232"/>
+            <S t="7584192" d="96256" r="2"/>
+            <S t="7872960" d="95232"/>
+            <S t="7968192" d="96256" r="2"/>
+            <S t="8256960" d="95232"/>
+            <S t="8352192" d="96256" r="2"/>
+            <S t="8640960" d="95232"/>
+            <S t="8736192" d="96256" r="2"/>
+            <S t="9024960" d="95232"/>
+            <S t="9120192" d="96256" r="2"/>
+            <S t="9408960" d="95232"/>
+            <S t="9504192" d="96256" r="2"/>
+            <S t="9792960" d="95232"/>
+            <S t="9888192" d="96256" r="2"/>
+            <S t="10176960" d="95232"/>
+            <S t="10272192" d="96256" r="2"/>
+            <S t="10560960" d="95232"/>
+            <S t="10656192" d="96256" r="2"/>
+            <S t="10944960" d="95232"/>
+            <S t="11040192" d="96256" r="2"/>
+            <S t="11328960" d="95232"/>
+            <S t="11424192" d="96256" r="2"/>
+            <S t="11712960" d="95232"/>
+            <S t="11808192" d="96256" r="2"/>
+            <S t="12096960" d="95232"/>
+            <S t="12192192" d="96256" r="2"/>
+            <S t="12480960" d="95232"/>
+            <S t="12576192" d="96256" r="2"/>
+            <S t="12864960" d="95232"/>
+            <S t="12960192" d="96256" r="2"/>
+            <S t="13248960" d="95232"/>
+            <S t="13344192" d="96256" r="2"/>
+            <S t="13632960" d="95232"/>
+            <S t="13728192" d="96256" r="2"/>
+            <S t="14016960" d="95232"/>
+            <S t="14112192" d="96256" r="2"/>
+            <S t="14400960" d="95232"/>
+            <S t="14496192" d="96256" r="2"/>
+            <S t="14784960" d="95232"/>
+            <S t="14880192" d="96256" r="2"/>
+            <S t="15168960" d="95232"/>
+            <S t="15264192" d="96256" r="2"/>
+            <S t="15552960" d="95232"/>
+            <S t="15648192" d="96256" r="2"/>
+            <S t="15936960" d="95232"/>
+            <S t="16032192" d="96256" r="2"/>
+            <S t="16320960" d="95232"/>
+            <S t="16416192" d="96256" r="2"/>
+            <S t="16704960" d="95232"/>
+            <S t="16800192" d="96256" r="2"/>
+            <S t="17088960" d="95232"/>
+            <S t="17184192" d="96256" r="2"/>
+            <S t="17472960" d="95232"/>
+            <S t="17568192" d="96256" r="2"/>
+            <S t="17856960" d="95232"/>
+            <S t="17952192" d="96256" r="2"/>
+            <S t="18240960" d="95232"/>
+            <S t="18336192" d="96256" r="2"/>
+            <S t="18624960" d="95232"/>
+            <S t="18720192" d="96256" r="2"/>
+            <S t="19008960" d="95232"/>
+            <S t="19104192" d="96256" r="2"/>
+            <S t="19392960" d="95232"/>
+            <S t="19488192" d="96256" r="2"/>
+            <S t="19776960" d="95232"/>
+            <S t="19872192" d="96256" r="2"/>
+            <S t="20160960" d="95232"/>
+            <S t="20256192" d="96256" r="2"/>
+            <S t="20544960" d="95232"/>
+            <S t="20640192" d="96256" r="2"/>
+            <S t="20928960" d="95232"/>
+            <S t="21024192" d="96256" r="2"/>
+            <S t="21312960" d="95232"/>
+            <S t="21408192" d="96256" r="2"/>
+            <S t="21696960" d="95232"/>
+            <S t="21792192" d="96256" r="2"/>
+            <S t="22080960" d="95232"/>
+            <S t="22176192" d="96256" r="2"/>
+            <S t="22464960" d="95232"/>
+            <S t="22560192" d="96256" r="2"/>
+            <S t="22848960" d="95232"/>
+            <S t="22944192" d="96256" r="2"/>
+            <S t="23232960" d="95232"/>
+            <S t="23328192" d="96256" r="2"/>
+            <S t="23616960" d="95232"/>
+            <S t="23712192" d="96256" r="2"/>
+            <S t="24000960" d="95232"/>
+            <S t="24096192" d="96256" r="2"/>
+            <S t="24384960" d="95232"/>
+            <S t="24480192" d="96256" r="2"/>
+            <S t="24768960" d="95232"/>
+            <S t="24864192" d="96256" r="2"/>
+            <S t="25152960" d="95232"/>
+            <S t="25248192" d="96256" r="2"/>
+            <S t="25536960" d="95232"/>
+            <S t="25632192" d="96256" r="2"/>
+            <S t="25920960" d="95232"/>
+            <S t="26016192" d="96256" r="2"/>
+            <S t="26304960" d="95232"/>
+            <S t="26400192" d="96256" r="2"/>
+            <S t="26688960" d="95232"/>
+            <S t="26784192" d="96256" r="2"/>
+            <S t="27072960" d="95232"/>
+            <S t="27168192" d="96256" r="2"/>
+            <S t="27456960" d="95232"/>
+            <S t="27552192" d="96256" r="2"/>
+            <S t="27840960" d="95232"/>
+            <S t="27936192" d="96256" r="2"/>
+            <S t="28224960" d="95232"/>
+            <S t="28320192" d="96256" r="2"/>
+            <S t="28608960" d="95232"/>
+            <S t="28704192" d="96256" r="2"/>
+            <S t="28992960" d="95232"/>
+            <S t="29088192" d="96256" r="2"/>
+            <S t="29376960" d="95232"/>
+            <S t="29472192" d="96256" r="2"/>
+            <S t="29760960" d="95232"/>
+            <S t="29856192" d="96256" r="2"/>
+            <S t="30144960" d="95232"/>
+            <S t="30240192" d="96256" r="1"/>
+            <S t="30432704" d="4096"/>
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
+3°j‰ƒ“      dåndånE±Ëdån   {    O^partitionKey=%28https%2Citslinuxfoss.com%29,a,:https://streaming.humix.com/contents/mXGzDTColNIVTAIF/1674054782/index.mpd necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/2 200 OK
+date: Fri, 16 Jun 2023 14:13:47 GMT
+content-length: 9556
+cf-ray: 7d83a7cc6e0e049e-CDG
+cf-cache-status: HIT
+accept-ranges: bytes
+age: 3095040
+cache-control: max-age=2678400
+last-modified: Thu, 11 May 2023 18:29:47 GMT
+vary: Accept-Encoding
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=eSpIT7673MxmvCIiwqvnGRpjlj3iWqiyuZZyG5NMydFd9%2FID1svCsHXjf57wMhiwSyAoRZlucKgWbU%2FPgSsGPqzkt3HSH6JuAC5GtHuQ49MqmE6eUnwKmqiPL%2FSf1eH807eZemi1"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+access-control-allow-origin: *
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+X-Firefox-Spdy: h2
+ original-response-headers date: Fri, 16 Jun 2023 14:13:47 GMT
+content-length: 9556
+cf-ray: 7d83a7cc6e0e049e-CDG
+cf-cache-status: HIT
+accept-ranges: bytes
+age: 3095040
+cache-control: max-age=2678400
+last-modified: Thu, 11 May 2023 18:29:47 GMT
+vary: Accept-Encoding
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=eSpIT7673MxmvCIiwqvnGRpjlj3iWqiyuZZyG5NMydFd9%2FID1svCsHXjf57wMhiwSyAoRZlucKgWbU%2FPgSsGPqzkt3HSH6JuAC5GtHuQ49MqmE6eUnwKmqiPL%2FSf1eH807eZemi1"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+access-control-allow-origin: *
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 398 net-response-time-onstop 401   %T

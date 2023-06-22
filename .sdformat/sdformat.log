@@ -1,0 +1,60 @@
+Dbg [parser.cc:574] Converting a deprecated source[/home/workspace/cartking_ws/src/simple_arm/worlds/willow_garage.world].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser_urdf.cc:1511] extension [<plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control"><robotNamespace>/simple_arm</robotNamespace><robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType></plugin>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1511] extension [<sensor name="rgb_camera" type="camera"><update_rate>30.0</update_rate><camera name="rgb_camera"><horizontal_fov>1.4</horizontal_fov><image><width>640</width><height>480</height><format>R8G8B8</format></image><clip><near>0.02</near><far>300</far></clip></camera><plugin filename="libgazebo_ros_camera.so" name="camera_controller"><alwaysOn>true</alwaysOn><updateRate>0.0</updateRate><cameraName>rgb_camera</cameraName><imageTopicName>image_raw</imageTopicName><cameraInfoTopicName>camera_info</cameraInfoTopicName><frameName>camera_link</frameName><hackBaseline>0.0</hackBaseline><distortionK1>0.0</distortionK1><distortionK2>0.0</distortionK2><distortionK3>0.0</distortionK3><distortionT1>0.0</distortionT1><distortionT2>0.0</distortionT2><robotNamespace>/</robotNamespace></plugin></sensor>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:418] Fixed Joint Reduction: extension lumping from [camera_link] to [link_2]
+Dbg [parser_urdf.cc:2448]   REDUCE EXTENSION: moving reference from [camera_link] to [link_2]
+Dbg [parser_urdf.cc:2514]   STRING REPLACE: instances of _link name [camera_link] with [link_2]
+Dbg [parser_urdf.cc:2522]         INITIAL STRING link [camera_link]-->[link_2]: [<plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control"><robotNamespace>/simple_arm</robotNamespace><robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType></plugin>]
+Dbg [parser_urdf.cc:2514]   STRING REPLACE: instances of _link name [camera_link] with [link_2]
+Dbg [parser_urdf.cc:2514]   STRING REPLACE: instances of _link name [camera_link] with [link_2]
+Dbg [parser_urdf.cc:2514]   STRING REPLACE: instances of _link name [camera_link] with [link_2]
+Dbg [parser_urdf.cc:2514]   STRING REPLACE: instances of _link name [camera_link] with [link_2]
+Dbg [parser_urdf.cc:2514]   STRING REPLACE: instances of _link name [camera_link] with [link_2]
+Dbg [parser_urdf.cc:2522]         INITIAL STRING link [camera_link]-->[link_2]: [<sensor name="rgb_camera" type="camera"><update_rate>30.0</update_rate><camera name="rgb_camera"><horizontal_fov>1.4</horizontal_fov><image><width>640</width><height>480</height><format>R8G8B8</format></image><clip><near>0.02</near><far>300</far></clip></camera><plugin filename="libgazebo_ros_camera.so" name="camera_controller"><alwaysOn>true</alwaysOn><updateRate>0.0</updateRate><cameraName>rgb_camera</cameraName><imageTopicName>image_raw</imageTopicName><cameraInfoTopicName>camera_info</cameraInfoTopicName><frameName>camera_link</frameName><hackBaseline>0.0</hackBaseline><distortionK1>0.0</distortionK1><distortionK2>0.0</distortionK2><distortionK3>0.0</distortionK3><distortionT1>0.0</distortionT1><distortionT2>0.0</distortionT2><robotNamespace>/</robotNamespace></plugin><pose>0 0 0.75 0 -1.5708 0</pose></sensor>]
+Dbg [parser_urdf.cc:717] LINK NAME: [parent: link_2] from dMass
+Dbg [parser_urdf.cc:718]      MASS: [1]
+Dbg [parser_urdf.cc:719]        CG: [0, 0, 0.375]
+Dbg [parser_urdf.cc:721]         I: [0.190833, 0, 0]
+Dbg [parser_urdf.cc:723]            [0, 0.190833, 0]
+Dbg [parser_urdf.cc:725]            [0, 0, 0.00666667]
+Dbg [parser_urdf.cc:717] LINK NAME: [link : camera_link] from dMass
+Dbg [parser_urdf.cc:718]      MASS: [1e-05]
+Dbg [parser_urdf.cc:719]        CG: [0, 0, 0]
+Dbg [parser_urdf.cc:721]         I: [1e-06, 0, 0]
+Dbg [parser_urdf.cc:723]            [0, 1e-06, 0]
+Dbg [parser_urdf.cc:725]            [0, 0, 1e-06]
+Dbg [parser_urdf.cc:717] LINK NAME: [link in parent link: camera_link] from dMass
+Dbg [parser_urdf.cc:718]      MASS: [1e-05]
+Dbg [parser_urdf.cc:719]        CG: [0, 0, 0.75]
+Dbg [parser_urdf.cc:721]         I: [6.625e-06, 0, 0]
+Dbg [parser_urdf.cc:723]            [0, 6.625e-06, 0]
+Dbg [parser_urdf.cc:725]            [0, 0, 1e-06]
+Dbg [parser_urdf.cc:717] LINK NAME: [combined: link_2] from dMass
+Dbg [parser_urdf.cc:718]      MASS: [1.00001]
+Dbg [parser_urdf.cc:719]        CG: [0, 0, 0.375004]
+Dbg [parser_urdf.cc:721]         I: [0.19084, 0, 0]
+Dbg [parser_urdf.cc:723]            [0, 0.19084, 0]
+Dbg [parser_urdf.cc:725]            [0, 0, 0.00666767]
+Dbg [parser_urdf.cc:733] LINK NAME: [link_2] from dMass
+Dbg [parser_urdf.cc:734]      MASS: [1.00001]
+Dbg [parser_urdf.cc:735]        CG: [0, 0, 0.375004]
+Dbg [parser_urdf.cc:738]         I: [0.0502107, 0, 0]
+Dbg [parser_urdf.cc:741]            [0, 0.0502107, 0]
+Dbg [parser_urdf.cc:744]            [0, 0, 0.00666767]
+Dbg [parser_urdf.cc:944] lumping visual [] for link [camera_link] to parent [link_2] with name [camera_link]
+Dbg [parser_urdf.cc:1003] lumping collision [] for link [camera_link] to parent [link_2] with name [camera_link]
+Dbg [parser_urdf.cc:2763] creating collision for link [base_link] collision []
+Dbg [parser_urdf.cc:2808] creating visual for link [base_link] visual []
+Dbg [parser_urdf.cc:2060] inserting extension with reference [base_link] into link.
+Dbg [parser_urdf.cc:2763] creating collision for link [link_1] collision []
+Dbg [parser_urdf.cc:2808] creating visual for link [link_1] visual []
+Dbg [parser_urdf.cc:2060] inserting extension with reference [link_1] into link.
+Dbg [parser_urdf.cc:2763] creating collision for link [link_2] collision []
+Dbg [parser_urdf.cc:2763] creating collision for link [link_2] collision [camera_link]
+Dbg [parser_urdf.cc:2808] creating visual for link [link_2] visual []
+Dbg [parser_urdf.cc:2808] creating visual for link [link_2] visual [camera_link]
+Dbg [parser_urdf.cc:2060] inserting extension with reference [link_2] into link.
+Dbg [parser.cc:483] Parsing from urdf.

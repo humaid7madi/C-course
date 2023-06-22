@@ -1,0 +1,54 @@
+[rosmaster.main][INFO] 2023-06-16 13:36:55,611: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2023-06-16 13:36:55,611: Starting ROS Master Node
+[xmlrpc][INFO] 2023-06-16 13:36:55,612: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2023-06-16 13:36:55,613: Started XML-RPC server [http://humaid7madi-VirtualBox:11311/]
+[xmlrpc][INFO] 2023-06-16 13:36:55,613: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2023-06-16 13:36:55,613: Master initialized: port[11311], uri[http://humaid7madi-VirtualBox:11311/]
+[rosmaster.master][INFO] 2023-06-16 13:36:55,652: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2023-06-16 13:36:55,653: +PARAM [/roslaunch/uris/host_humaid7madi_virtualbox__35693] by /roslaunch
+[rosmaster.master][INFO] 2023-06-16 13:36:55,676: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2023-06-16 13:36:55,676: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2023-06-16 13:36:55,686: +SERVICE [/rosout/get_loggers] /rosout http://humaid7madi-VirtualBox:33825/
+[rosmaster.master][INFO] 2023-06-16 13:36:55,690: +SERVICE [/rosout/set_logger_level] /rosout http://humaid7madi-VirtualBox:33825/
+[rosmaster.master][INFO] 2023-06-16 13:36:55,691: +PUB [/rosout_agg] /rosout http://humaid7madi-VirtualBox:33825/
+[rosmaster.master][INFO] 2023-06-16 13:36:55,694: +SUB [/rosout] /rosout http://humaid7madi-VirtualBox:33825/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,211: +PUB [/rosout] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,212: +SERVICE [/turtlesim/get_loggers] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,213: +SERVICE [/turtlesim/set_logger_level] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,224: +PARAM [/turtlesim/background_r] by /turtlesim
+[rosmaster.master][INFO] 2023-06-16 13:38:22,225: +PARAM [/turtlesim/background_g] by /turtlesim
+[rosmaster.master][INFO] 2023-06-16 13:38:22,226: +PARAM [/turtlesim/background_b] by /turtlesim
+[rosmaster.master][INFO] 2023-06-16 13:38:22,272: +SERVICE [/clear] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,272: +SERVICE [/reset] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,273: +SERVICE [/spawn] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,274: +SERVICE [/kill] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,274: +CACHEDPARAM [/rosout_disable_topics_generation] by /turtlesim
+[rosmaster.master][INFO] 2023-06-16 13:38:22,277: +SUB [/turtle1/cmd_vel] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,278: +PUB [/turtle1/pose] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,278: +PUB [/turtle1/color_sensor] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,279: +SERVICE [/turtle1/set_pen] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,280: +SERVICE [/turtle1/teleport_relative] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,280: +SERVICE [/turtle1/teleport_absolute] /turtlesim http://humaid7madi-VirtualBox:41175/
+[rosmaster.master][INFO] 2023-06-16 13:38:22,301: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:33825/ ['http://humaid7madi-VirtualBox:41175/']
+[rosmaster.master][INFO] 2023-06-16 13:38:22,305: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:33825/ ['http://humaid7madi-VirtualBox:41175/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-16 13:40:07,259: +PUB [/rosout] /teleop_turtle http://humaid7madi-VirtualBox:46335/
+[rosmaster.master][INFO] 2023-06-16 13:40:07,260: +SERVICE [/teleop_turtle/get_loggers] /teleop_turtle http://humaid7madi-VirtualBox:46335/
+[rosmaster.master][INFO] 2023-06-16 13:40:07,261: +SERVICE [/teleop_turtle/set_logger_level] /teleop_turtle http://humaid7madi-VirtualBox:46335/
+[rosmaster.master][INFO] 2023-06-16 13:40:07,263: +PUB [/turtle1/cmd_vel] /teleop_turtle http://humaid7madi-VirtualBox:46335/
+[rosmaster.master][INFO] 2023-06-16 13:40:07,264: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:33825/ ['http://humaid7madi-VirtualBox:41175/', 'http://humaid7madi-VirtualBox:46335/']
+[rosmaster.master][INFO] 2023-06-16 13:40:07,265: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:33825/ ['http://humaid7madi-VirtualBox:41175/', 'http://humaid7madi-VirtualBox:46335/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-16 13:40:07,265: publisherUpdate[/turtle1/cmd_vel] -> http://humaid7madi-VirtualBox:41175/ ['http://humaid7madi-VirtualBox:46335/']
+[rosmaster.master][INFO] 2023-06-16 13:40:07,266: publisherUpdate[/turtle1/cmd_vel] -> http://humaid7madi-VirtualBox:41175/ ['http://humaid7madi-VirtualBox:46335/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-16 14:24:05,415: +PUB [/rosout] /rostopic_33917_1686911045389 http://humaid7madi-VirtualBox:39105/
+[rosmaster.master][INFO] 2023-06-16 14:24:05,419: +SERVICE [/rostopic_33917_1686911045389/get_loggers] /rostopic_33917_1686911045389 http://humaid7madi-VirtualBox:39105/
+[rosmaster.master][INFO] 2023-06-16 14:24:05,420: +SERVICE [/rostopic_33917_1686911045389/set_logger_level] /rostopic_33917_1686911045389 http://humaid7madi-VirtualBox:39105/
+[rosmaster.master][INFO] 2023-06-16 14:24:05,470: +SUB [/turtle1/cmd_vel] /rostopic_33917_1686911045389 http://humaid7madi-VirtualBox:39105/
+[rosmaster.master][INFO] 2023-06-16 14:24:05,507: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:33825/ ['http://humaid7madi-VirtualBox:41175/', 'http://humaid7madi-VirtualBox:46335/', 'http://humaid7madi-VirtualBox:39105/']
+[rosmaster.master][INFO] 2023-06-16 14:24:05,511: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:33825/ ['http://humaid7madi-VirtualBox:41175/', 'http://humaid7madi-VirtualBox:46335/', 'http://humaid7madi-VirtualBox:39105/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-16 18:06:52,756: -PUB [/rosout_agg] /rosout http://humaid7madi-VirtualBox:33825/
+[rosmaster.master][INFO] 2023-06-16 18:06:52,764: -SUB [/rosout] /rosout http://humaid7madi-VirtualBox:33825/
+[rosmaster.master][INFO] 2023-06-16 18:06:52,767: -SERVICE [/rosout/get_loggers] /rosout rosrpc://humaid7madi-VirtualBox:40919
+[rosmaster.master][INFO] 2023-06-16 18:06:52,771: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://humaid7madi-VirtualBox:40919
+[rosmaster.main][INFO] 2023-06-16 18:06:52,978: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2023-06-16 18:06:52,978: stopping master...
+[rospy.core][INFO] 2023-06-16 18:06:52,979: signal_shutdown [atexit]

@@ -1,0 +1,14 @@
+Gazebo multi-robot simulator, version 11.11.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1687191741 53742978) [Msg] Waiting for master.
+(1687191741 59605837) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1687191741 59633670) [Msg] Publicized address: 10.0.2.15
+(1687191741 543635017) [Msg] Loading world file [/home/workspace/cartking_ws/src/simple_arm/worlds/willow_garage.world]
+(1687191742 63063822) Init world[default]
+(1687191743 21962152) [Err] [Plugin.hh:212] Failed to load plugin libgazebo_ros_control.so: libgazebo_ros_control.so: cannot open shared object file: No such file or directory
+(1687191744 778062254) [Wrn] [Publisher.cc:135] Queue limit reached for topic /gazebo/default/pose/local/info, deleting message. This warning is printed only once.
+(1687191783 279367772) [Wrn] [Publisher.cc:135] Queue limit reached for topic /gazebo/default/physics/contacts, deleting message. This warning is printed only once.

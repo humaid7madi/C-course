@@ -1,0 +1,253 @@
+[rosmaster.main][INFO] 2023-06-17 11:54:31,753: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2023-06-17 11:54:31,754: Starting ROS Master Node
+[xmlrpc][INFO] 2023-06-17 11:54:31,770: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2023-06-17 11:54:31,771: Started XML-RPC server [http://humaid7madi-VirtualBox:11311/]
+[xmlrpc][INFO] 2023-06-17 11:54:31,772: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2023-06-17 11:54:31,773: Master initialized: port[11311], uri[http://humaid7madi-VirtualBox:11311/]
+[rosmaster.master][INFO] 2023-06-17 11:54:31,809: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,810: +PARAM [/roslaunch/uris/host_humaid7madi_virtualbox__43765] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,844: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,846: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,846: +PARAM [/robot_description] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,846: +PARAM [/joint_state_publisher/use_gui] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,846: +PARAM [/simple_arm/joint_state_controller/type] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,846: +PARAM [/simple_arm/joint_state_controller/publish_rate] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,846: +PARAM [/simple_arm/joint_1_position_controller/type] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/simple_arm/joint_1_position_controller/joint] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/simple_arm/joint_1_position_controller/pid/p] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/simple_arm/joint_1_position_controller/pid/i] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/simple_arm/joint_1_position_controller/pid/d] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/simple_arm/joint_2_position_controller/type] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/simple_arm/joint_2_position_controller/joint] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/simple_arm/joint_2_position_controller/pid/p] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/simple_arm/joint_2_position_controller/pid/i] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/simple_arm/joint_2_position_controller/pid/d] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/use_sim_time] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,847: +PARAM [/gazebo/enable_ros_network] by /roslaunch
+[rosmaster.master][INFO] 2023-06-17 11:54:31,961: +SERVICE [/rosout/get_loggers] /rosout http://humaid7madi-VirtualBox:41339/
+[rosmaster.master][INFO] 2023-06-17 11:54:31,966: +SERVICE [/rosout/set_logger_level] /rosout http://humaid7madi-VirtualBox:41339/
+[rosmaster.master][INFO] 2023-06-17 11:54:31,992: +SUB [/clock] /rosout http://humaid7madi-VirtualBox:41339/
+[rosmaster.master][INFO] 2023-06-17 11:54:31,994: +PUB [/rosout_agg] /rosout http://humaid7madi-VirtualBox:41339/
+[rosmaster.master][INFO] 2023-06-17 11:54:31,996: +SUB [/rosout] /rosout http://humaid7madi-VirtualBox:41339/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,028: +PUB [/rosout] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,029: +SERVICE [/robot_state_publisher/get_loggers] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,029: +SERVICE [/robot_state_publisher/set_logger_level] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,031: +SUB [/clock] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,050: +PUB [/tf] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,051: +PUB [/tf_static] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,053: +SUB [/simple_arm/joint_states] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,078: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/']
+[rosmaster.master][INFO] 2023-06-17 11:54:32,084: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:32,299: +PUB [/rosout] /simple_arm/spawner http://humaid7madi-VirtualBox:41305/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,307: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/']
+[rosmaster.master][INFO] 2023-06-17 11:54:32,315: +SUB [/clock] /simple_arm/spawner http://humaid7madi-VirtualBox:41305/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,324: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:32,338: +SERVICE [/simple_arm/spawner/get_loggers] /simple_arm/spawner http://humaid7madi-VirtualBox:41305/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,342: +SERVICE [/simple_arm/spawner/set_logger_level] /simple_arm/spawner http://humaid7madi-VirtualBox:41305/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,354: +CACHEDPARAM [/rosout_disable_topics_generation] by /simple_arm/spawner
+[rosmaster.master][INFO] 2023-06-17 11:54:32,489: +PUB [/rosout] /joint_state_publisher http://humaid7madi-VirtualBox:42299/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,490: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/']
+[rosmaster.master][INFO] 2023-06-17 11:54:32,491: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:32,504: +SUB [/clock] /joint_state_publisher http://humaid7madi-VirtualBox:42299/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,508: +SERVICE [/joint_state_publisher/get_loggers] /joint_state_publisher http://humaid7madi-VirtualBox:42299/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,509: +SERVICE [/joint_state_publisher/set_logger_level] /joint_state_publisher http://humaid7madi-VirtualBox:42299/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,539: +PUB [/joint_states] /joint_state_publisher http://humaid7madi-VirtualBox:42299/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,603: +CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.master][INFO] 2023-06-17 11:54:32,737: +PUB [/rosout] /urdf_spawner http://humaid7madi-VirtualBox:32967/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,738: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:32967/']
+[rosmaster.master][INFO] 2023-06-17 11:54:32,739: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:32967/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:32,767: +SUB [/clock] /urdf_spawner http://humaid7madi-VirtualBox:32967/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,790: +SERVICE [/urdf_spawner/get_loggers] /urdf_spawner http://humaid7madi-VirtualBox:32967/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,805: +SERVICE [/urdf_spawner/set_logger_level] /urdf_spawner http://humaid7madi-VirtualBox:32967/
+[rosmaster.master][INFO] 2023-06-17 11:54:32,827: +CACHEDPARAM [/rosout_disable_topics_generation] by /urdf_spawner
+[rosmaster.master][INFO] 2023-06-17 11:54:32,867: +CACHEDPARAM [/rosout_disable_topics_generation] by /urdf_spawner
+[rosmaster.master][INFO] 2023-06-17 11:54:33,490: +PUB [/rosout] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:33,491: +SERVICE [/gazebo/get_loggers] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:33,491: +SERVICE [/gazebo/set_logger_level] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:33,495: +SUB [/clock] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:33,498: +CACHEDPARAM [/rosout_disable_topics_generation] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:33,537: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:32967/', 'http://humaid7madi-VirtualBox:37147/']
+[rosmaster.master][INFO] 2023-06-17 11:54:33,539: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:32967/', 'http://humaid7madi-VirtualBox:37147/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:33,681: +PUB [/rosout] /gazebo_gui http://humaid7madi-VirtualBox:34117/
+[rosmaster.master][INFO] 2023-06-17 11:54:33,682: +SERVICE [/gazebo_gui/get_loggers] /gazebo_gui http://humaid7madi-VirtualBox:34117/
+[rosmaster.master][INFO] 2023-06-17 11:54:33,683: +SERVICE [/gazebo_gui/set_logger_level] /gazebo_gui http://humaid7madi-VirtualBox:34117/
+[rosmaster.master][INFO] 2023-06-17 11:54:33,687: +SUB [/clock] /gazebo_gui http://humaid7madi-VirtualBox:34117/
+[rosmaster.master][INFO] 2023-06-17 11:54:33,688: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:32967/', 'http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']
+[rosmaster.master][INFO] 2023-06-17 11:54:33,688: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:32967/', 'http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:33,692: +CACHEDPARAM [/rosout_disable_topics_generation] by /gazebo_gui
+[rosmaster.master][INFO] 2023-06-17 11:54:34,518: +PUB [/clock] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,523: +SERVICE [/gazebo/spawn_sdf_model] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,528: +SERVICE [/gazebo/spawn_urdf_model] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,529: +SERVICE [/gazebo/delete_model] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,534: +SERVICE [/gazebo/delete_light] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,536: +SERVICE [/gazebo/get_model_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,536: +SERVICE [/gazebo/get_model_state] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,536: +SERVICE [/gazebo/get_world_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,538: +SERVICE [/gazebo/get_joint_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,538: +SERVICE [/gazebo/get_link_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,539: +SERVICE [/gazebo/get_link_state] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,539: +SERVICE [/gazebo/get_light_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,540: +SERVICE [/gazebo/set_light_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,540: +SERVICE [/gazebo/get_physics_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,540: +PUB [/gazebo/link_states] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,541: +PUB [/gazebo/model_states] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,541: +PUB [/gazebo/performance_metrics] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,542: +SERVICE [/gazebo/set_link_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,543: +SERVICE [/gazebo/set_physics_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,543: +SERVICE [/gazebo/set_model_state] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,545: +SERVICE [/gazebo/set_model_configuration] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,545: +SERVICE [/gazebo/set_joint_properties] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,546: +SERVICE [/gazebo/set_link_state] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,547: +SUB [/gazebo/set_link_state] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,550: +SUB [/gazebo/set_model_state] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,550: +SERVICE [/gazebo/pause_physics] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,550: +SERVICE [/gazebo/unpause_physics] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,551: +SERVICE [/gazebo/apply_body_wrench] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,554: +SERVICE [/gazebo/apply_joint_effort] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,554: +SERVICE [/gazebo/clear_joint_forces] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,555: +SERVICE [/gazebo/clear_body_wrenches] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,556: +SERVICE [/gazebo/reset_simulation] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,556: +SERVICE [/gazebo/reset_world] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,559: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:37147/']
+[rosmaster.master][INFO] 2023-06-17 11:54:34,560: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:36585/ ['http://humaid7madi-VirtualBox:37147/']
+[rosmaster.master][INFO] 2023-06-17 11:54:34,562: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:37147/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:34,562: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:41305/ ['http://humaid7madi-VirtualBox:37147/']
+[rosmaster.master][INFO] 2023-06-17 11:54:34,563: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:36585/ ['http://humaid7madi-VirtualBox:37147/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:34,563: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:42299/ ['http://humaid7madi-VirtualBox:37147/']
+[rosmaster.master][INFO] 2023-06-17 11:54:34,571: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:42299/ ['http://humaid7madi-VirtualBox:37147/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:34,572: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:41305/ ['http://humaid7madi-VirtualBox:37147/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:34,575: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:37147/ ['http://humaid7madi-VirtualBox:37147/']
+[rosmaster.master][INFO] 2023-06-17 11:54:34,574: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:32967/ ['http://humaid7madi-VirtualBox:37147/']
+[rosmaster.master][INFO] 2023-06-17 11:54:34,578: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:37147/ ['http://humaid7madi-VirtualBox:37147/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:34,578: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:34117/ ['http://humaid7madi-VirtualBox:37147/']
+[rosmaster.master][INFO] 2023-06-17 11:54:34,585: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:34117/ ['http://humaid7madi-VirtualBox:37147/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:34,586: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:32967/ ['http://humaid7madi-VirtualBox:37147/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:54:34,587: +SERVICE [/gazebo/set_parameters] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,588: +PUB [/gazebo/parameter_descriptions] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,589: +PUB [/gazebo/parameter_updates] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:54:34,598: +PARAM [/gazebo/time_step] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,598: +PARAM [/gazebo/max_update_rate] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,598: +PARAM [/gazebo/gravity_x] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,599: +PARAM [/gazebo/gravity_y] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,599: +PARAM [/gazebo/gravity_z] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,599: +PARAM [/gazebo/auto_disable_bodies] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,600: +PARAM [/gazebo/sor_pgs_precon_iters] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,600: +PARAM [/gazebo/sor_pgs_iters] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,601: +PARAM [/gazebo/sor_pgs_w] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,601: +PARAM [/gazebo/sor_pgs_rms_error_tol] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,601: +PARAM [/gazebo/cfm] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,601: +PARAM [/gazebo/erp] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,602: +PARAM [/gazebo/contact_surface_layer] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,602: +PARAM [/gazebo/contact_max_correcting_vel] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,602: +PARAM [/gazebo/max_contacts] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,605: +PARAM [/gazebo/time_step] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,605: +PARAM [/gazebo/max_update_rate] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,606: +PARAM [/gazebo/gravity_x] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,606: +PARAM [/gazebo/gravity_y] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,607: +PARAM [/gazebo/gravity_z] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,607: +PARAM [/gazebo/auto_disable_bodies] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,607: +PARAM [/gazebo/sor_pgs_precon_iters] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,609: +PARAM [/gazebo/sor_pgs_iters] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,609: +PARAM [/gazebo/sor_pgs_w] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,610: +PARAM [/gazebo/sor_pgs_rms_error_tol] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,610: +PARAM [/gazebo/cfm] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,610: +PARAM [/gazebo/erp] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,611: +PARAM [/gazebo/contact_surface_layer] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,611: +PARAM [/gazebo/contact_max_correcting_vel] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,611: +PARAM [/gazebo/max_contacts] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:54:34,709: +CACHEDPARAM [/rosout_disable_topics_generation] by /urdf_spawner
+[rosmaster.master][INFO] 2023-06-17 11:56:48,627: +CACHEDPARAM [/rosout_disable_topics_generation] by /urdf_spawner
+[rosmaster.master][INFO] 2023-06-17 11:56:48,662: +CACHEDPARAM [/rosout_disable_topics_generation] by /urdf_spawner
+[rosmaster.master][INFO] 2023-06-17 11:56:48,665: -SUB [/clock] /urdf_spawner http://humaid7madi-VirtualBox:32967/
+[rosmaster.master][INFO] 2023-06-17 11:56:48,665: -PUB [/rosout] /urdf_spawner http://humaid7madi-VirtualBox:32967/
+[rosmaster.master][INFO] 2023-06-17 11:56:48,666: -SERVICE [/urdf_spawner/get_loggers] /urdf_spawner rosrpc://humaid7madi-VirtualBox:36277
+[rosmaster.master][INFO] 2023-06-17 11:56:48,666: -SERVICE [/urdf_spawner/set_logger_level] /urdf_spawner rosrpc://humaid7madi-VirtualBox:36277
+[rosmaster.master][INFO] 2023-06-17 11:56:48,670: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']
+[rosmaster.master][INFO] 2023-06-17 11:56:48,672: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:41305/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 11:56:49,722: +SERVICE [/rgb_camera/set_camera_info] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:56:49,732: +SERVICE [/rgb_camera/set_parameters] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:56:49,739: +PUB [/rgb_camera/parameter_descriptions] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:56:49,741: +PUB [/rgb_camera/parameter_updates] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:56:49,746: +PARAM [/rgb_camera/imager_rate] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:56:49,748: +PARAM [/rgb_camera/imager_rate] by /gazebo
+[rosmaster.master][INFO] 2023-06-17 11:56:49,781: +PUB [/rgb_camera/image_raw] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:56:49,787: +PUB [/rgb_camera/camera_info] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 11:56:50,258: +CACHEDPARAM [/rosout_disable_topics_generation] by /simple_arm/spawner
+[rosmaster.master][INFO] 2023-06-17 11:56:50,260: +CACHEDPARAM [/rosout_disable_topics_generation] by /simple_arm/spawner
+[rosmaster.master][INFO] 2023-06-17 11:57:20,462: +CACHEDPARAM [/rosout_disable_topics_generation] by /simple_arm/spawner
+[rosmaster.master][INFO] 2023-06-17 11:57:20,474: -SUB [/clock] /simple_arm/spawner http://humaid7madi-VirtualBox:41305/
+[rosmaster.master][INFO] 2023-06-17 11:57:20,474: -PUB [/rosout] /simple_arm/spawner http://humaid7madi-VirtualBox:41305/
+[rosmaster.master][INFO] 2023-06-17 11:57:20,474: -SERVICE [/simple_arm/spawner/get_loggers] /simple_arm/spawner rosrpc://humaid7madi-VirtualBox:44217
+[rosmaster.master][INFO] 2023-06-17 11:57:20,475: -SERVICE [/simple_arm/spawner/set_logger_level] /simple_arm/spawner rosrpc://humaid7madi-VirtualBox:44217
+[rosmaster.master][INFO] 2023-06-17 11:57:20,490: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']
+[rosmaster.master][INFO] 2023-06-17 11:57:20,496: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:42299/', 'http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 12:05:13,557: -SUB [/clock] /joint_state_publisher http://humaid7madi-VirtualBox:42299/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,559: -PUB [/rosout] /joint_state_publisher http://humaid7madi-VirtualBox:42299/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,559: -PUB [/joint_states] /joint_state_publisher http://humaid7madi-VirtualBox:42299/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,559: -SERVICE [/joint_state_publisher/get_loggers] /joint_state_publisher rosrpc://humaid7madi-VirtualBox:39089
+[rosmaster.master][INFO] 2023-06-17 12:05:13,559: -SERVICE [/joint_state_publisher/set_logger_level] /joint_state_publisher rosrpc://humaid7madi-VirtualBox:39089
+[rosmaster.master][INFO] 2023-06-17 12:05:13,560: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']
+[rosmaster.master][INFO] 2023-06-17 12:05:13,567: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:36585/', 'http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 12:05:13,640: -PUB [/rosout] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,641: -PUB [/tf] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,641: -PUB [/tf_static] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,643: -SUB [/clock] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,645: -SUB [/simple_arm/joint_states] /robot_state_publisher http://humaid7madi-VirtualBox:36585/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,646: -SERVICE [/robot_state_publisher/get_loggers] /robot_state_publisher rosrpc://humaid7madi-VirtualBox:35257
+[rosmaster.master][INFO] 2023-06-17 12:05:13,646: -SERVICE [/robot_state_publisher/set_logger_level] /robot_state_publisher rosrpc://humaid7madi-VirtualBox:35257
+[rosmaster.master][INFO] 2023-06-17 12:05:13,646: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']
+[rosmaster.master][INFO] 2023-06-17 12:05:13,647: publisherUpdate[/rosout] -> http://humaid7madi-VirtualBox:41339/ ['http://humaid7madi-VirtualBox:37147/', 'http://humaid7madi-VirtualBox:34117/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 12:05:13,670: -SUB [/gazebo/set_link_state] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,671: -SUB [/gazebo/set_model_state] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,672: -PUB [/clock] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,675: -PUB [/gazebo/link_states] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,675: -PUB [/gazebo/model_states] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,676: -PUB [/gazebo/performance_metrics] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,676: -SERVICE [/gazebo/spawn_sdf_model] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,681: -SERVICE [/gazebo/spawn_urdf_model] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,686: -SERVICE [/gazebo/delete_model] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,690: -SERVICE [/gazebo/delete_light] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,690: -SERVICE [/gazebo/get_model_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,696: -SERVICE [/gazebo/get_model_state] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,697: -SERVICE [/gazebo/get_world_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,697: -SERVICE [/gazebo/get_joint_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,698: -SERVICE [/gazebo/get_link_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,699: -SERVICE [/gazebo/get_link_state] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,699: -SERVICE [/gazebo/get_light_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,700: -SERVICE [/gazebo/set_light_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,701: -SERVICE [/gazebo/get_physics_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,701: -SERVICE [/gazebo/set_link_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,702: -SERVICE [/gazebo/set_physics_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,703: -SERVICE [/gazebo/set_model_state] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,703: -SERVICE [/gazebo/set_model_configuration] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,704: -SERVICE [/gazebo/set_joint_properties] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,704: -SERVICE [/gazebo/set_link_state] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,705: -SERVICE [/gazebo/pause_physics] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,705: -SERVICE [/gazebo/unpause_physics] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,706: -SERVICE [/gazebo/apply_body_wrench] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,706: -SERVICE [/gazebo/apply_joint_effort] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,707: -SERVICE [/gazebo/clear_joint_forces] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,707: -SERVICE [/gazebo/clear_body_wrenches] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,708: -SERVICE [/gazebo/reset_simulation] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,709: -SERVICE [/gazebo/reset_world] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,737: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:41339/ []
+[rosmaster.master][INFO] 2023-06-17 12:05:13,738: -PUB [/gazebo/parameter_descriptions] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,740: -PUB [/gazebo/parameter_updates] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,741: -SERVICE [/gazebo/set_parameters] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,747: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:41339/ []: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 12:05:13,748: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:37147/ []
+[rosmaster.master][INFO] 2023-06-17 12:05:13,749: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:34117/ []
+[rosmaster.master][INFO] 2023-06-17 12:05:13,750: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:37147/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 12:05:13,751: publisherUpdate[/clock] -> http://humaid7madi-VirtualBox:34117/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-06-17 12:05:13,754: -PUB [/rgb_camera/camera_info] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:13,756: -SERVICE [/rgb_camera/set_camera_info] /gazebo rosrpc://humaid7madi-VirtualBox:42197
+[rosmaster.master][INFO] 2023-06-17 12:05:13,757: -PUB [/rgb_camera/image_raw] /gazebo http://humaid7madi-VirtualBox:37147/
+[rosmaster.master][INFO] 2023-06-17 12:05:29,978: -PUB [/rosout_agg] /rosout http://humaid7madi-VirtualBox:41339/
+[rosmaster.master][INFO] 2023-06-17 12:05:29,978: -SUB [/clock] /rosout http://humaid7madi-VirtualBox:41339/
+[rosmaster.master][INFO] 2023-06-17 12:05:29,979: -SUB [/rosout] /rosout http://humaid7madi-VirtualBox:41339/
+[rosmaster.master][INFO] 2023-06-17 12:05:29,979: -SERVICE [/rosout/get_loggers] /rosout rosrpc://humaid7madi-VirtualBox:35725
+[rosmaster.master][INFO] 2023-06-17 12:05:29,980: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://humaid7madi-VirtualBox:35725
+[rosmaster.master][INFO] 2023-06-17 12:05:29,981: -CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.main][INFO] 2023-06-17 12:05:30,409: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2023-06-17 12:05:30,409: stopping master...
+[rospy.core][INFO] 2023-06-17 12:05:30,409: signal_shutdown [atexit]

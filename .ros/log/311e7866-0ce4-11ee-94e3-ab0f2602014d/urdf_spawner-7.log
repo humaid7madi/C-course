@@ -1,0 +1,24 @@
+[rospy.client][INFO] 2023-06-17 11:54:32,594: init_node, name[/urdf_spawner], pid[75299]
+[xmlrpc][INFO] 2023-06-17 11:54:32,594: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-06-17 11:54:32,602: Started XML-RPC server [http://humaid7madi-VirtualBox:32967/]
+[rospy.impl.masterslave][INFO] 2023-06-17 11:54:32,602: _ready: http://humaid7madi-VirtualBox:32967/
+[rospy.init][INFO] 2023-06-17 11:54:32,603: ROS Slave URI: [http://humaid7madi-VirtualBox:32967/]
+[rospy.registration][INFO] 2023-06-17 11:54:32,607: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-06-17 11:54:32,607: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-06-17 11:54:32,722: registered with master
+[rospy.rosout][INFO] 2023-06-17 11:54:32,723: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-06-17 11:54:32,743: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-06-17 11:54:32,759: initializing /clock core topic
+[rospy.simtime][INFO] 2023-06-17 11:54:32,778: connected to core topic /clock
+[rosout][INFO] 2023-06-17 11:54:32,817: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2023-06-17 11:54:32,866: Waiting for service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2023-06-17 11:54:32,973: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2023-06-17 11:54:34,588: topic[/clock] adding connection to [http://humaid7madi-VirtualBox:37147/], count 0
+[rosout][INFO] 2023-06-17 11:54:34,708: Calling service /gazebo/spawn_urdf_model
+[rosout][INFO] 2023-06-17 11:56:48,625: Spawn status: SpawnModel: Entity pushed to spawn queue, but spawn service timed out waiting for entity to appear in simulation under the name simple_arm
+[rosout][ERROR] 2023-06-17 11:56:48,629: Spawn service failed. Exiting.
+[rospy.core][INFO] 2023-06-17 11:56:48,664: signal_shutdown [atexit]
+[rospy.internal][INFO] 2023-06-17 11:56:48,667: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-06-17 11:56:48,668: topic[/clock] removing connection to http://humaid7madi-VirtualBox:37147/
+[rospy.internal][INFO] 2023-06-17 11:56:48,669: topic[/clock] removing connection to http://humaid7madi-VirtualBox:37147/
+[rospy.impl.masterslave][INFO] 2023-06-17 11:56:48,669: atexit
